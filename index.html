@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/486324977_1016404930367739_5197490493644165498_n.jpg" alt="Logo Perusahaan" class="logo-img">
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#profile" class="nav-link">Our Profile</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#message" class="nav-link">Message Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+     <section id="home" class="hero-section">
+    <div class="hero-slider">
+        <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <div class="container">
+            <h1 class="welcome-message">Hi <span id="user-name">Harfi</span>, Welcome To Our Website</h1>
+            <p class="subtitle">Ini adalah website portofolio kami</p>
+
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn" id="prevSlide">&#10094;</button>
+                <button class="slider-btn next-btn" id="nextSlide">&#10095;</button>
+            </div>
+
+            <div class="slider-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+                <span class="indicator" data-slide="3"></span>
+            </div>
+        </div>
+    </div>
+</section>
+        <section id="profile" class="profile-section">
+            <div class="container">
+                <h2>Our Profile</h2>
+                <div class="profile-content">
+                    <div class="photo-banner">
+                        <img src="img/tech.jpg" alt="Company Photo Banner" class="banner-image">
+                    </div>
+                    
+                    <div class="company-info">
+                        <h3>About the Company</h3>
+                        <p>We are a leading technology company dedicated to providing innovative solutions for businesses worldwide. Our team of experts works tirelessly to deliver cutting-edge products and services that exceed our clients' expectations.</p>
+                        <p>Founded in 2010, we have grown from a small startup to a major player in the tech industry, serving clients across various sectors including finance, healthcare, education, and e-commerce.</p>
+                    </div>
+
+                    <div class="vision-mission">
+                        <div class="vision">
+                            <h3>Our Vision</h3>
+                            <p>To be the world's most trusted technology partner, empowering businesses to achieve their digital transformation goals through innovative solutions and exceptional service.</p>
+                        </div>
+                        <div class="mission">
+                            <h3>Our Mission</h3>
+                            <p>To deliver high-quality, scalable, and secure technology solutions that drive business growth and create lasting value for our clients, employees, and communities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="img/Screenshot 2025-07-18 185653.png" alt="Project 1">
+                        <h3>Website Profile Dosen</h3>
+                        <p>Profile Website yang berisi informasi penting serta life update dari seorang dosen</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/mbanking.jpg" alt="Project 2">
+                        <h3>Mobile Banking App</h3>
+                        <p>Secure and user-friendly mobile banking application.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/hospital.jpg" alt="Project 3">
+                        <h3>Healthcare Management System</h3>
+                        <p>Digital solution for healthcare providers and patients.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="message" class="message-section">
+            <div class="container">
+                <h2>Message Us</h2>
+                <div class="message-content">
+                    <div class="message-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="nama">Nama</label>
+                                <input type="text" id="nama" name="nama" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tanggal">Tanggal Lahir</label>
+                                <input type="date" id="tanggal" name="tanggal" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Jenis Kelamin</label>
+                                <div class="radio-group">
+                                    <label><input type="radio" name="gender" value="Laki-laki"> Laki-laki</label>
+                                    <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pesan">Pesan</label>
+                                <textarea id="pesan" name="pesan" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                    <div class="message-display">
+                        <div id="formOutput">
+                            <p><strong>Current time:</strong> <span id="currentTime"></span></p>
+                            <p><strong>Name:</strong> <span id="displayName">-</span></p>
+                            <p><strong>Tanggal Lahir:</strong> <span id="displayDate">-</span></p>
+                            <p><strong>Jenis Kelamin:</strong> <span id="displayGender">-</span></p>
+                            <p><strong>Pesan:</strong> <span id="displayMessage">-</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>Created By Aqsha</p>
+        </div>
+    </footer>
+
+    <div id="popup-overlay" class="hidden">
+    <div id="popup-box">
+        <h2>Selamat Datang!</h2>
+        <p>Silakan masukkan nama Anda di bawah ini.</p>
+        <form id="popup-form">
+            <input type="text" id="popup-name-input" placeholder="Nama Anda..." required>
+            <button type="submit">Simpan</button>
+        </form>
+    </div>
+</div>
+
+    <script src="/Js/script.js"></script>
+</body>
+</html>
